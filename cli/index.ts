@@ -17,6 +17,7 @@ cli
   )
   .option('-o', 'alias to --force-overwrite')
   .action(async (input, dest, options) => {
+    const startedAt = Date.now()
     const compiler = new Compiler()
     const cwd = process.cwd()
     const forceOverwrite = options.forceOverwrite ?? options.o ?? false
@@ -45,10 +46,14 @@ cli
 
     await writeFile(destPath, json)
 
+    const endAt = Date.now()
+
     console.log(
       chalk.green`Successfully compiled ${chalk.cyan(
         Object.keys(snippets).length
-      )} snippets to ${chalk.cyan`'${dest}'`}.`
+      )} snippets to ${chalk.cyan(dest)} ${chalk.gray`(${
+        endAt - startedAt
+      }ms).`}`
     )
   })
 cli.help()
