@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@types/marked": "^2.0.2",
+    "cac": "^6.7.3",
     "change-case": "^4.1.2",
     "marked": "^2.0.3"
   }
