@@ -56,5 +56,8 @@
     "moduleNameMapper": {
       "^@/(.+)": "<rootDir>/src/$1"
     }
+  },
+  "dependencies": {
+    "markdown-it": "^12.0.6"
   }
 }
