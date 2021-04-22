@@ -14,7 +14,9 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "files": [
-    "dist/"
+    "dist/",
+    "cli/index.js",
+    "bin/"
   ],
   "scripts": {
     "build": "rollup -c && tsc cli/index.ts",
