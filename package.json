@@ -58,6 +58,7 @@
     }
   },
   "dependencies": {
+    "@types/marked": "^2.0.2",
     "marked": "^2.0.3"
   }
 }
