@@ -2,6 +2,7 @@
 node_modules/
 coverage/
 dist/
+cli/index.js
 
 # OS
 .DS_Store
