@@ -7,6 +7,9 @@
     "type": "git",
     "url": "hota1024/markits"
   },
+  "bin": {
+    "markits": "./bin/markits.js"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
